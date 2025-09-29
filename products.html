@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Cake Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra styling for product page */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      width: 230px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      background: #fff;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 160px; /* smaller & neat */
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    .card-content p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .price {
+      font-weight: bold;
+      color: #e85c50;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h2 class="logo">🍰 Cake Shop</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart 🛒</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-content">
+    <h1>Our Cakes</h1>
+    <div class="gallery">
+      <!-- Cake Cards -->
+      <div class="card">
+        <img src="images/chocolate2.jpeg" alt="Chocolate Cake">
+        <div class="card-content">
+          <h2>Chocolate Cake</h2>
+          <p>Rich chocolate cream layered delight.</p>
+          <p class="price">1000 tk / per pound</p>
+          <button class="btn" onclick="addToCart('Chocolate Cake', 1000)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/vanilla3.jpg" alt="Vanilla Cake">
+        <div class="card-content">
+          <h2>Vanilla Cake</h2>
+          <p>Soft vanilla sponge with creamy topping.</p>
+          <p class="price">800 tk / per pound</p>
+          <button class="btn" onclick="addToCart('Vanilla Cake', 800)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/red valvet 2.jpeg" alt="Red Velvet Cake">
+        <div class="card-content">
+          <h2>Red Velvet Cake</h2>
+          <p>Classic red velvet with cream cheese frosting.</p>
+          <p class="price">1200 tk / per pound</p>
+          <button class="btn" onclick="addToCart('Red Velvet Cake', 1200)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cheesecake2.webp" alt="Cheesecake">
+        <div class="card-content">
+          <h2>Cheesecake</h2>
+          <p>New York style creamy cheesecake.</p>
+          <p class="price">1500 tk / per pound</p>
+          <button class="btn" onclick="addToCart('Cheesecake', 1500)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

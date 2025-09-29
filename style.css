@@ -1,0 +1,141 @@
+/* ===== General Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #fff0f5;
+    color: #333;
+  }
+  
+  nav.navbar {
+    background-color: #ff66b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  nav.navbar .logo {
+    font-size: 1.8em;
+    color: #fff;
+  }
+  
+  nav.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav.navbar ul li a:hover, nav.navbar ul li a.active {
+    color: #ffe6f0;
+  }
+  
+  section.page-content {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff3399;
+    margin-bottom: 30px;
+  }
+  
+  /* ===== Table Styling ===== */
+  table#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  table#cartTable th, table#cartTable td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s;
+  }
+  
+  table#cartTable th {
+    background-color: #ffe6f0;
+    color: #ff3399;
+    font-weight: 600;
+  }
+  
+  table#cartTable tbody tr:hover {
+    background-color: #fff0f5;
+  }
+  
+  button.remove-btn {
+    background-color: #ff4d94;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button.remove-btn:hover {
+    background-color: #ff1a75;
+  }
+  
+  #cartTotal {
+    text-align: right;
+    font-size: 1.4em;
+    color: #ff3399;
+    margin-bottom: 20px;
+  }
+  
+  button.btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button.btn:hover {
+    background-color: #ff3385;
+  }
+  
+  /* ===== Quantity Buttons Styling ===== */
+  button.qty-btn {
+    background-color: #ff99cc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  button.qty-btn:hover {
+    background-color: #ff66b2;
+  }
+  
+  .qty {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  

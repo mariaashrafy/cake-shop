@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero section */
+    .hero {
+      background: url("https://images.unsplash.com/photo-1599785209707-28b8b5163ec6") no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero .btn {
+      background: #ff6f61;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s;
+    }
+    .hero .btn:hover {
+      background: #e85c50;
+    }
+
+    /* Featured section */
+    .featured {
+      padding: 40px;
+      text-align: center;
+    }
+    .featured h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+    .featured .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .featured .card {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .featured .card:hover {
+      transform: scale(1.05);
+    }
+    .featured img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">🍰 Cake Shop</h2>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart 🛒</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Cake Shop</h1>
+    <p>Freshly baked cakes for every occasion 🍰</p>
+    <a href="products.html"><button class="btn">Shop Now</button></a>
+  </section>
+
+  <!-- Featured Cakes -->
+  <section class="featured">
+    <h2>✨ Our Featured Cakes</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="images/vanilla2.jpeg" alt="Vanilla Cake">
+        <div class="card-content">
+          <h3>Vanilla Delight</h3>
+          <p>Light, fluffy & classic.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/red velvet.jpg" alt="red valvet Cake">
+
+        <div class="card-content">
+          <h3>Red Velvet</h3>
+          <p>Rich flavor with cream cheese.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/cheeesecake.jpeg" 
+        alt="Cheesecake">
+        <div class="card-content">
+          <h3>Cheesecake</h3>
+          <p>Perfectly creamy indulgence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
